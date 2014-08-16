@@ -1,0 +1,1011 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report version="1.0">
+  <metadata>
+    <definitions>Mono 2.8 (4.0 Profile)</definitions>
+    <momaversion>2.0.0.0</momaversion>
+    <date>2014-02-03 14:38:52Z</date>
+    <name />
+    <email />
+    <homepage />
+    <organization />
+    <comments />
+    <apptype />
+  </metadata>
+  <assemblies>
+    <assembly name="Gekijou.exe" version="1.0.0.0" runtime="2.0" todo="0" niex="0" miss="5" pinv="0">
+      <issue type="miss">
+        <class>frmMain</class>
+        <caller>void button1_Click(Object, EventArgs)</caller>
+        <method>void .ctor()</method>
+        <raw>System.Void System.Speech.Synthesis.SpeechSynthesizer::.ctor()</raw>
+      </issue>
+      <issue type="miss">
+        <class>frmMain</class>
+        <caller>void button1_Click(Object, EventArgs)</caller>
+        <method>void SetOutputToDefaultAudioDevice()</method>
+        <raw>System.Void System.Speech.Synthesis.SpeechSynthesizer::SetOutputToDefaultAudioDevice()</raw>
+      </issue>
+      <issue type="miss">
+        <class>frmMain</class>
+        <caller>void button1_Click(Object, EventArgs)</caller>
+        <method>void .ctor(int, AudioBitsPerSample, AudioChannel)</method>
+        <raw>System.Void System.Speech.AudioFormat.SpeechAudioFormatInfo::.ctor(System.Int32,System.Speech.AudioFormat.AudioBitsPerSample,System.Speech.AudioFormat.AudioChannel)</raw>
+      </issue>
+      <issue type="miss">
+        <class>frmMain</class>
+        <caller>void button1_Click(Object, EventArgs)</caller>
+        <method>void SetOutputToWaveFile(string, SpeechAudioFormatInfo)</method>
+        <raw>System.Void System.Speech.Synthesis.SpeechSynthesizer::SetOutputToWaveFile(System.String,System.Speech.AudioFormat.SpeechAudioFormatInfo)</raw>
+      </issue>
+      <issue type="miss">
+        <class>frmMain</class>
+        <caller>void button1_Click(Object, EventArgs)</caller>
+        <method>void Speak(string)</method>
+        <raw>System.Void System.Speech.Synthesis.SpeechSynthesizer::Speak(System.String)</raw>
+      </issue>
+    </assembly>
+    <assembly name="NAudio.dll" version="1.7.0.15" runtime="2.0" todo="0" niex="0" miss="0" pinv="122">
+      <issue type="pinv">
+        <class>MediaFoundationApi</class>
+        <caller>void Startup()</caller>
+        <method>void MFStartup(int, int)</method>
+        <raw>System.Void NAudio.MediaFoundation.MediaFoundationInterop::MFStartup(System.Int32,System.Int32)</raw>
+        <data>mfplat.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MediaFoundationApi</class>
+        <caller>void Shutdown()</caller>
+        <method>void MFShutdown()</method>
+        <raw>System.Void NAudio.MediaFoundation.MediaFoundationInterop::MFShutdown()</raw>
+        <data>mfplat.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MediaFoundationApi</class>
+        <caller>IMFMediaType CreateMediaType()</caller>
+        <method>void MFCreateMediaType(IMFMediaType&amp;)</method>
+        <raw>System.Void NAudio.MediaFoundation.MediaFoundationInterop::MFCreateMediaType(NAudio.MediaFoundation.IMFMediaType&amp;)</raw>
+        <data>mfplat.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MediaFoundationApi</class>
+        <caller>IMFMediaType CreateMediaTypeFromWaveFormat(WaveFormat)</caller>
+        <method>void MFInitMediaTypeFromWaveFormatEx(IMFMediaType, WaveFormat, int)</method>
+        <raw>System.Void NAudio.MediaFoundation.MediaFoundationInterop::MFInitMediaTypeFromWaveFormatEx(NAudio.MediaFoundation.IMFMediaType,NAudio.Wave.WaveFormat,System.Int32)</raw>
+        <data>mfplat.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MediaFoundationApi</class>
+        <caller>IMFMediaBuffer CreateMemoryBuffer(int)</caller>
+        <method>void MFCreateMemoryBuffer(int, IMFMediaBuffer&amp;)</method>
+        <raw>System.Void NAudio.MediaFoundation.MediaFoundationInterop::MFCreateMemoryBuffer(System.Int32,NAudio.MediaFoundation.IMFMediaBuffer&amp;)</raw>
+        <data>mfplat.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MediaFoundationApi</class>
+        <caller>IMFSample CreateSample()</caller>
+        <method>void MFCreateSample(IMFSample&amp;)</method>
+        <raw>System.Void NAudio.MediaFoundation.MediaFoundationInterop::MFCreateSample(NAudio.MediaFoundation.IMFSample&amp;)</raw>
+        <data>mfplat.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MediaFoundationApi</class>
+        <caller>IMFAttributes CreateAttributes(int)</caller>
+        <method>void MFCreateAttributes(IMFAttributes&amp;, int)</method>
+        <raw>System.Void NAudio.MediaFoundation.MediaFoundationInterop::MFCreateAttributes(NAudio.MediaFoundation.IMFAttributes&amp;,System.Int32)</raw>
+        <data>mfplat.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MediaFoundationApi</class>
+        <caller>IMFByteStream CreateByteStream(Object)</caller>
+        <method>void MFCreateMFByteStreamOnStreamEx(Object, IMFByteStream&amp;)</method>
+        <raw>System.Void NAudio.MediaFoundation.MediaFoundationInterop::MFCreateMFByteStreamOnStreamEx(System.Object,NAudio.MediaFoundation.IMFByteStream&amp;)</raw>
+        <data>mfplat.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MediaFoundationApi</class>
+        <caller>IMFSourceReader CreateSourceReaderFromByteStream(IMFByteStream)</caller>
+        <method>void MFCreateSourceReaderFromByteStream(IMFByteStream, IMFAttributes, IMFSourceReader&amp;)</method>
+        <raw>System.Void NAudio.MediaFoundation.MediaFoundationInterop::MFCreateSourceReaderFromByteStream(NAudio.MediaFoundation.IMFByteStream,NAudio.MediaFoundation.IMFAttributes,NAudio.MediaFoundation.IMFSourceReader&amp;)</raw>
+        <data>mfreadwrite.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveInEvent</class>
+        <caller>int get_DeviceCount()</caller>
+        <method>int waveInGetNumDevs()</method>
+        <raw>System.Int32 NAudio.Wave.WaveInterop::waveInGetNumDevs()</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveInEvent</class>
+        <caller>WaveInCapabilities GetCapabilities(int)</caller>
+        <method>MmResult waveInGetDevCaps(IntPtr, WaveInCapabilities&amp;, int)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveInGetDevCaps(System.IntPtr,NAudio.Wave.WaveInCapabilities&amp;,System.Int32)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveInEvent</class>
+        <caller>void OpenWaveInDevice()</caller>
+        <method>MmResult waveInOpenWindow(IntPtr&amp;, IntPtr, WaveFormat, IntPtr, IntPtr, WaveInterop/WaveInOutOpenFlags)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveInOpenWindow(System.IntPtr&amp;,System.IntPtr,NAudio.Wave.WaveFormat,System.IntPtr,System.IntPtr,NAudio.Wave.WaveInterop/WaveInOutOpenFlags)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveInEvent</class>
+        <caller>void StartRecording()</caller>
+        <method>MmResult waveInStart(IntPtr)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveInStart(System.IntPtr)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveInEvent</class>
+        <caller>void StopRecording()</caller>
+        <method>MmResult waveInStop(IntPtr)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveInStop(System.IntPtr)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveInEvent</class>
+        <caller>void CloseWaveInDevice()</caller>
+        <method>MmResult waveInReset(IntPtr)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveInReset(System.IntPtr)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveInEvent</class>
+        <caller>void CloseWaveInDevice()</caller>
+        <method>MmResult waveInClose(IntPtr)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveInClose(System.IntPtr)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MediaObject</class>
+        <caller>DmoMediaType&gt; GetInputType(int, int)</caller>
+        <method>int MoFreeMediaType(DmoMediaType&amp;)</method>
+        <raw>System.Int32 NAudio.Dmo.DmoInterop::MoFreeMediaType(NAudio.Dmo.DmoMediaType&amp;)</raw>
+        <data>msdmo.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MediaObject</class>
+        <caller>DmoMediaType&gt; GetOutputType(int, int)</caller>
+        <method>int MoFreeMediaType(DmoMediaType&amp;)</method>
+        <raw>System.Int32 NAudio.Dmo.DmoInterop::MoFreeMediaType(NAudio.Dmo.DmoMediaType&amp;)</raw>
+        <data>msdmo.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MediaObject</class>
+        <caller>DmoMediaType GetOutputCurrentType(int)</caller>
+        <method>int MoFreeMediaType(DmoMediaType&amp;)</method>
+        <raw>System.Int32 NAudio.Dmo.DmoInterop::MoFreeMediaType(NAudio.Dmo.DmoMediaType&amp;)</raw>
+        <data>msdmo.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MediaObject</class>
+        <caller>void SetInputWaveFormat(int, WaveFormat)</caller>
+        <method>int MoFreeMediaType(DmoMediaType&amp;)</method>
+        <raw>System.Int32 NAudio.Dmo.DmoInterop::MoFreeMediaType(NAudio.Dmo.DmoMediaType&amp;)</raw>
+        <data>msdmo.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MediaObject</class>
+        <caller>bool SupportsInputWaveFormat(int, WaveFormat)</caller>
+        <method>int MoFreeMediaType(DmoMediaType&amp;)</method>
+        <raw>System.Int32 NAudio.Dmo.DmoInterop::MoFreeMediaType(NAudio.Dmo.DmoMediaType&amp;)</raw>
+        <data>msdmo.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MediaObject</class>
+        <caller>DmoMediaType CreateDmoMediaTypeForWaveFormat(WaveFormat)</caller>
+        <method>int MoInitMediaType(DmoMediaType&amp;, int)</method>
+        <raw>System.Int32 NAudio.Dmo.DmoInterop::MoInitMediaType(NAudio.Dmo.DmoMediaType&amp;,System.Int32)</raw>
+        <data>msdmo.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MediaObject</class>
+        <caller>bool SupportsOutputWaveFormat(int, WaveFormat)</caller>
+        <method>int MoFreeMediaType(DmoMediaType&amp;)</method>
+        <raw>System.Int32 NAudio.Dmo.DmoInterop::MoFreeMediaType(NAudio.Dmo.DmoMediaType&amp;)</raw>
+        <data>msdmo.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MediaObject</class>
+        <caller>void SetOutputWaveFormat(int, WaveFormat)</caller>
+        <method>int MoFreeMediaType(DmoMediaType&amp;)</method>
+        <raw>System.Int32 NAudio.Dmo.DmoInterop::MoFreeMediaType(NAudio.Dmo.DmoMediaType&amp;)</raw>
+        <data>msdmo.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MidiIn</class>
+        <caller>int get_NumberOfDevices()</caller>
+        <method>int midiInGetNumDevs()</method>
+        <raw>System.Int32 NAudio.Midi.MidiInterop::midiInGetNumDevs()</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MidiIn</class>
+        <caller>void Start()</caller>
+        <method>MmResult midiInStart(IntPtr)</method>
+        <raw>NAudio.MmResult NAudio.Midi.MidiInterop::midiInStart(System.IntPtr)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MidiIn</class>
+        <caller>void Stop()</caller>
+        <method>MmResult midiInStop(IntPtr)</method>
+        <raw>NAudio.MmResult NAudio.Midi.MidiInterop::midiInStop(System.IntPtr)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MidiIn</class>
+        <caller>void Reset()</caller>
+        <method>MmResult midiInReset(IntPtr)</method>
+        <raw>NAudio.MmResult NAudio.Midi.MidiInterop::midiInReset(System.IntPtr)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MidiIn</class>
+        <caller>MidiInCapabilities DeviceInfo(int)</caller>
+        <method>MmResult midiInGetDevCaps(IntPtr, MidiInCapabilities&amp;, int)</method>
+        <raw>NAudio.MmResult NAudio.Midi.MidiInterop::midiInGetDevCaps(System.IntPtr,NAudio.Midi.MidiInCapabilities&amp;,System.Int32)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MidiIn</class>
+        <caller>void Dispose(bool)</caller>
+        <method>MmResult midiInClose(IntPtr)</method>
+        <raw>NAudio.MmResult NAudio.Midi.MidiInterop::midiInClose(System.IntPtr)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MidiIn</class>
+        <caller>void .ctor(int)</caller>
+        <method>MmResult midiInOpen(IntPtr&amp;, IntPtr, MidiInterop/MidiInCallback, IntPtr, int)</method>
+        <raw>NAudio.MmResult NAudio.Midi.MidiInterop::midiInOpen(System.IntPtr&amp;,System.IntPtr,NAudio.Midi.MidiInterop/MidiInCallback,System.IntPtr,System.Int32)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MidiOut</class>
+        <caller>int get_NumberOfDevices()</caller>
+        <method>int midiOutGetNumDevs()</method>
+        <raw>System.Int32 NAudio.Midi.MidiInterop::midiOutGetNumDevs()</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MidiOut</class>
+        <caller>MidiOutCapabilities DeviceInfo(int)</caller>
+        <method>MmResult midiOutGetDevCaps(IntPtr, MidiOutCapabilities&amp;, int)</method>
+        <raw>NAudio.MmResult NAudio.Midi.MidiInterop::midiOutGetDevCaps(System.IntPtr,NAudio.Midi.MidiOutCapabilities&amp;,System.Int32)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MidiOut</class>
+        <caller>int get_Volume()</caller>
+        <method>MmResult midiOutGetVolume(IntPtr, Int32&amp;)</method>
+        <raw>NAudio.MmResult NAudio.Midi.MidiInterop::midiOutGetVolume(System.IntPtr,System.Int32&amp;)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MidiOut</class>
+        <caller>void set_Volume(int)</caller>
+        <method>MmResult midiOutSetVolume(IntPtr, int)</method>
+        <raw>NAudio.MmResult NAudio.Midi.MidiInterop::midiOutSetVolume(System.IntPtr,System.Int32)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MidiOut</class>
+        <caller>void Reset()</caller>
+        <method>MmResult midiOutReset(IntPtr)</method>
+        <raw>NAudio.MmResult NAudio.Midi.MidiInterop::midiOutReset(System.IntPtr)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MidiOut</class>
+        <caller>void SendDriverMessage(int, int, int)</caller>
+        <method>MmResult midiOutMessage(IntPtr, int, IntPtr, IntPtr)</method>
+        <raw>NAudio.MmResult NAudio.Midi.MidiInterop::midiOutMessage(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MidiOut</class>
+        <caller>void Send(int)</caller>
+        <method>MmResult midiOutShortMsg(IntPtr, int)</method>
+        <raw>NAudio.MmResult NAudio.Midi.MidiInterop::midiOutShortMsg(System.IntPtr,System.Int32)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MidiOut</class>
+        <caller>void Dispose(bool)</caller>
+        <method>MmResult midiOutClose(IntPtr)</method>
+        <raw>NAudio.MmResult NAudio.Midi.MidiInterop::midiOutClose(System.IntPtr)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MidiOut</class>
+        <caller>void SendBuffer(Byte[])</caller>
+        <method>MmResult midiOutPrepareHeader(IntPtr, MidiInterop/MIDIHDR&amp;, int)</method>
+        <raw>NAudio.MmResult NAudio.Midi.MidiInterop::midiOutPrepareHeader(System.IntPtr,NAudio.Midi.MidiInterop/MIDIHDR&amp;,System.Int32)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MidiOut</class>
+        <caller>void SendBuffer(Byte[])</caller>
+        <method>MmResult midiOutLongMsg(IntPtr, MidiInterop/MIDIHDR&amp;, int)</method>
+        <raw>NAudio.MmResult NAudio.Midi.MidiInterop::midiOutLongMsg(System.IntPtr,NAudio.Midi.MidiInterop/MIDIHDR&amp;,System.Int32)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MidiOut</class>
+        <caller>void SendBuffer(Byte[])</caller>
+        <method>MmResult midiOutUnprepareHeader(IntPtr, MidiInterop/MIDIHDR&amp;, int)</method>
+        <raw>NAudio.MmResult NAudio.Midi.MidiInterop::midiOutUnprepareHeader(System.IntPtr,NAudio.Midi.MidiInterop/MIDIHDR&amp;,System.Int32)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MidiOut</class>
+        <caller>void .ctor(int)</caller>
+        <method>MmResult midiOutOpen(IntPtr&amp;, IntPtr, MidiInterop/MidiOutCallback, IntPtr, int)</method>
+        <raw>NAudio.MmResult NAudio.Midi.MidiInterop::midiOutOpen(System.IntPtr&amp;,System.IntPtr,NAudio.Midi.MidiInterop/MidiOutCallback,System.IntPtr,System.Int32)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MixerControl</class>
+        <caller>MixerControl&gt; GetMixerControls(IntPtr, MixerLine, MixerFlags)</caller>
+        <method>MmResult mixerGetLineControls(IntPtr, MixerInterop/MIXERLINECONTROLS&amp;, MixerFlags)</method>
+        <raw>NAudio.MmResult NAudio.Mixer.MixerInterop::mixerGetLineControls(System.IntPtr,NAudio.Mixer.MixerInterop/MIXERLINECONTROLS&amp;,NAudio.Mixer.MixerFlags)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MixerControl</class>
+        <caller>MixerControl GetMixerControl(IntPtr, int, int, int, MixerFlags)</caller>
+        <method>MmResult mixerGetLineControls(IntPtr, MixerInterop/MIXERLINECONTROLS&amp;, MixerFlags)</method>
+        <raw>NAudio.MmResult NAudio.Mixer.MixerInterop::mixerGetLineControls(System.IntPtr,NAudio.Mixer.MixerInterop/MIXERLINECONTROLS&amp;,NAudio.Mixer.MixerFlags)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MixerControl</class>
+        <caller>void GetControlDetails()</caller>
+        <method>MmResult mixerGetControlDetails(IntPtr, MixerInterop/MIXERCONTROLDETAILS&amp;, MixerFlags)</method>
+        <raw>NAudio.MmResult NAudio.Mixer.MixerInterop::mixerGetControlDetails(System.IntPtr,NAudio.Mixer.MixerInterop/MIXERCONTROLDETAILS&amp;,NAudio.Mixer.MixerFlags)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>BooleanMixerControl</class>
+        <caller>void set_Value(bool)</caller>
+        <method>MmResult mixerSetControlDetails(IntPtr, MixerInterop/MIXERCONTROLDETAILS&amp;, MixerFlags)</method>
+        <raw>NAudio.MmResult NAudio.Mixer.MixerInterop::mixerSetControlDetails(System.IntPtr,NAudio.Mixer.MixerInterop/MIXERCONTROLDETAILS&amp;,NAudio.Mixer.MixerFlags)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>Mixer</class>
+        <caller>int get_NumberOfDevices()</caller>
+        <method>int mixerGetNumDevs()</method>
+        <raw>System.Int32 NAudio.Mixer.MixerInterop::mixerGetNumDevs()</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>Mixer</class>
+        <caller>void .ctor(int)</caller>
+        <method>MmResult mixerGetDevCaps(IntPtr, MixerInterop/MIXERCAPS&amp;, int)</method>
+        <raw>NAudio.MmResult NAudio.Mixer.MixerInterop::mixerGetDevCaps(System.IntPtr,NAudio.Mixer.MixerInterop/MIXERCAPS&amp;,System.Int32)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MixerLine</class>
+        <caller>int GetMixerIdForWaveIn(int)</caller>
+        <method>MmResult mixerGetID(IntPtr, Int32&amp;, MixerFlags)</method>
+        <raw>NAudio.MmResult NAudio.Mixer.MixerInterop::mixerGetID(System.IntPtr,System.Int32&amp;,NAudio.Mixer.MixerFlags)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MixerLine</class>
+        <caller>void .ctor(IntPtr, int, MixerFlags)</caller>
+        <method>MmResult mixerGetLineInfo(IntPtr, MixerInterop/MIXERLINE&amp;, MixerFlags)</method>
+        <raw>NAudio.MmResult NAudio.Mixer.MixerInterop::mixerGetLineInfo(System.IntPtr,NAudio.Mixer.MixerInterop/MIXERLINE&amp;,NAudio.Mixer.MixerFlags)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MixerLine</class>
+        <caller>void .ctor(IntPtr, int, int, MixerFlags)</caller>
+        <method>MmResult mixerGetLineInfo(IntPtr, MixerInterop/MIXERLINE&amp;, MixerFlags)</method>
+        <raw>NAudio.MmResult NAudio.Mixer.MixerInterop::mixerGetLineInfo(System.IntPtr,NAudio.Mixer.MixerInterop/MIXERLINE&amp;,NAudio.Mixer.MixerFlags)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>SignedMixerControl</class>
+        <caller>void set_Value(int)</caller>
+        <method>MmResult mixerSetControlDetails(IntPtr, MixerInterop/MIXERCONTROLDETAILS&amp;, MixerFlags)</method>
+        <raw>NAudio.MmResult NAudio.Mixer.MixerInterop::mixerSetControlDetails(System.IntPtr,NAudio.Mixer.MixerInterop/MIXERCONTROLDETAILS&amp;,NAudio.Mixer.MixerFlags)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>UnsignedMixerControl</class>
+        <caller>void set_Value(uint)</caller>
+        <method>MmResult mixerSetControlDetails(IntPtr, MixerInterop/MIXERCONTROLDETAILS&amp;, MixerFlags)</method>
+        <raw>NAudio.MmResult NAudio.Mixer.MixerInterop::mixerSetControlDetails(System.IntPtr,NAudio.Mixer.MixerInterop/MIXERCONTROLDETAILS&amp;,NAudio.Mixer.MixerFlags)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>PropVariant</class>
+        <caller>void Clear()</caller>
+        <method>int PropVariantClear(PropVariant&amp;)</method>
+        <raw>System.Int32 NAudio.CoreAudioApi.Interfaces.PropVariant::PropVariantClear(NAudio.CoreAudioApi.Interfaces.PropVariant&amp;)</raw>
+        <data>ole32.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>ASIODriver</class>
+        <caller>void initFromGuid(Guid)</caller>
+        <method>int CoCreateInstance(Guid&amp;, IntPtr, uint, Guid&amp;, IntPtr&amp;)</method>
+        <raw>System.Int32 NAudio.Wave.Asio.ASIODriver::CoCreateInstance(System.Guid&amp;,System.IntPtr,System.UInt32,System.Guid&amp;,System.IntPtr&amp;)</raw>
+        <data>ole32.Dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>AcmDriver</class>
+        <caller>AcmDriver AddLocalDriver(string)</caller>
+        <method>IntPtr LoadLibrary(string)</method>
+        <raw>System.IntPtr NAudio.Utils.NativeMethods::LoadLibrary(System.String)</raw>
+        <data>kernel32.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>AcmDriver</class>
+        <caller>AcmDriver AddLocalDriver(string)</caller>
+        <method>IntPtr GetProcAddress(IntPtr, string)</method>
+        <raw>System.IntPtr NAudio.Utils.NativeMethods::GetProcAddress(System.IntPtr,System.String)</raw>
+        <data>kernel32.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>AcmDriver</class>
+        <caller>AcmDriver AddLocalDriver(string)</caller>
+        <method>bool FreeLibrary(IntPtr)</method>
+        <raw>System.Boolean NAudio.Utils.NativeMethods::FreeLibrary(System.IntPtr)</raw>
+        <data>kernel32.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>AcmDriver</class>
+        <caller>AcmDriver AddLocalDriver(string)</caller>
+        <method>MmResult acmDriverAdd(IntPtr&amp;, IntPtr, IntPtr, int, AcmDriverAddFlags)</method>
+        <raw>NAudio.MmResult NAudio.Wave.Compression.AcmInterop::acmDriverAdd(System.IntPtr&amp;,System.IntPtr,System.IntPtr,System.Int32,NAudio.Wave.Compression.AcmDriverAddFlags)</raw>
+        <data>msacm32.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>AcmDriver</class>
+        <caller>AcmDriver AddLocalDriver(string)</caller>
+        <method>bool FreeLibrary(IntPtr)</method>
+        <raw>System.Boolean NAudio.Utils.NativeMethods::FreeLibrary(System.IntPtr)</raw>
+        <data>kernel32.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>AcmDriver</class>
+        <caller>void RemoveLocalDriver(AcmDriver)</caller>
+        <method>MmResult acmDriverRemove(IntPtr, int)</method>
+        <raw>NAudio.MmResult NAudio.Wave.Compression.AcmInterop::acmDriverRemove(System.IntPtr,System.Int32)</raw>
+        <data>msacm32.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>AcmDriver</class>
+        <caller>void RemoveLocalDriver(AcmDriver)</caller>
+        <method>bool FreeLibrary(IntPtr)</method>
+        <raw>System.Boolean NAudio.Utils.NativeMethods::FreeLibrary(System.IntPtr)</raw>
+        <data>kernel32.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>AcmDriver</class>
+        <caller>bool ShowFormatChooseDialog(IntPtr, string, AcmFormatEnumFlags, WaveFormat, WaveFormat&amp;, String&amp;, String&amp;)</caller>
+        <method>MmResult acmFormatChoose(AcmFormatChoose&amp;)</method>
+        <raw>NAudio.MmResult NAudio.Wave.Compression.AcmInterop::acmFormatChoose(NAudio.Wave.Compression.AcmFormatChoose&amp;)</raw>
+        <data>Msacm32.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>AcmDriver</class>
+        <caller>int get_MaxFormatSize()</caller>
+        <method>MmResult acmMetrics(IntPtr, AcmMetrics, Int32&amp;)</method>
+        <raw>NAudio.MmResult NAudio.Wave.Compression.AcmInterop::acmMetrics(System.IntPtr,NAudio.Wave.AcmMetrics,System.Int32&amp;)</raw>
+        <data>Msacm32.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>AcmDriver</class>
+        <caller>AcmDriver&gt; EnumerateAcmDrivers()</caller>
+        <method>MmResult acmDriverEnum(AcmInterop/AcmDriverEnumCallback, IntPtr, AcmDriverEnumFlags)</method>
+        <raw>NAudio.MmResult NAudio.Wave.Compression.AcmInterop::acmDriverEnum(NAudio.Wave.Compression.AcmInterop/AcmDriverEnumCallback,System.IntPtr,NAudio.Wave.Compression.AcmDriverEnumFlags)</raw>
+        <data>Msacm32.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>AcmDriver</class>
+        <caller>AcmFormatTag&gt; get_FormatTags()</caller>
+        <method>MmResult acmFormatTagEnum(IntPtr, AcmFormatTagDetails&amp;, AcmInterop/AcmFormatTagEnumCallback, IntPtr, int)</method>
+        <raw>NAudio.MmResult NAudio.Wave.Compression.AcmInterop::acmFormatTagEnum(System.IntPtr,NAudio.Wave.Compression.AcmFormatTagDetails&amp;,NAudio.Wave.Compression.AcmInterop/AcmFormatTagEnumCallback,System.IntPtr,System.Int32)</raw>
+        <data>Msacm32.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>AcmDriver</class>
+        <caller>AcmFormat&gt; GetFormats(AcmFormatTag)</caller>
+        <method>MmResult acmFormatEnum(IntPtr, AcmFormatDetails&amp;, AcmInterop/AcmFormatEnumCallback, IntPtr, AcmFormatEnumFlags)</method>
+        <raw>NAudio.MmResult NAudio.Wave.Compression.AcmInterop::acmFormatEnum(System.IntPtr,NAudio.Wave.Compression.AcmFormatDetails&amp;,NAudio.Wave.Compression.AcmInterop/AcmFormatEnumCallback,System.IntPtr,NAudio.Wave.Compression.AcmFormatEnumFlags)</raw>
+        <data>Msacm32.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>AcmDriver</class>
+        <caller>void Open()</caller>
+        <method>MmResult acmDriverOpen(IntPtr&amp;, IntPtr, int)</method>
+        <raw>NAudio.MmResult NAudio.Wave.Compression.AcmInterop::acmDriverOpen(System.IntPtr&amp;,System.IntPtr,System.Int32)</raw>
+        <data>Msacm32.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>AcmDriver</class>
+        <caller>void Close()</caller>
+        <method>MmResult acmDriverClose(IntPtr, int)</method>
+        <raw>NAudio.MmResult NAudio.Wave.Compression.AcmInterop::acmDriverClose(System.IntPtr,System.Int32)</raw>
+        <data>Msacm32.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>AcmDriver</class>
+        <caller>void .ctor(IntPtr)</caller>
+        <method>MmResult acmDriverDetails(IntPtr, AcmDriverDetails&amp;, int)</method>
+        <raw>NAudio.MmResult NAudio.Wave.Compression.AcmInterop::acmDriverDetails(System.IntPtr,NAudio.Wave.Compression.AcmDriverDetails&amp;,System.Int32)</raw>
+        <data>Msacm32.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>AcmStream</class>
+        <caller>int SourceToDest(int)</caller>
+        <method>MmResult acmStreamSize(IntPtr, int, Int32&amp;, AcmStreamSizeFlags)</method>
+        <raw>NAudio.MmResult NAudio.Wave.Compression.AcmInterop::acmStreamSize(System.IntPtr,System.Int32,System.Int32&amp;,NAudio.Wave.Compression.AcmStreamSizeFlags)</raw>
+        <data>Msacm32.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>AcmStream</class>
+        <caller>int DestToSource(int)</caller>
+        <method>MmResult acmStreamSize(IntPtr, int, Int32&amp;, AcmStreamSizeFlags)</method>
+        <raw>NAudio.MmResult NAudio.Wave.Compression.AcmInterop::acmStreamSize(System.IntPtr,System.Int32,System.Int32&amp;,NAudio.Wave.Compression.AcmStreamSizeFlags)</raw>
+        <data>Msacm32.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>AcmStream</class>
+        <caller>WaveFormat SuggestPcmFormat(WaveFormat)</caller>
+        <method>MmResult acmFormatSuggest(IntPtr, WaveFormat, WaveFormat, int, AcmFormatSuggestFlags)</method>
+        <raw>NAudio.MmResult NAudio.Wave.Compression.AcmInterop::acmFormatSuggest(System.IntPtr,NAudio.Wave.WaveFormat,NAudio.Wave.WaveFormat,System.Int32,NAudio.Wave.Compression.AcmFormatSuggestFlags)</raw>
+        <data>Msacm32.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>AcmStream</class>
+        <caller>void Dispose(bool)</caller>
+        <method>MmResult acmStreamClose(IntPtr, int)</method>
+        <raw>NAudio.MmResult NAudio.Wave.Compression.AcmInterop::acmStreamClose(System.IntPtr,System.Int32)</raw>
+        <data>Msacm32.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>AcmStream</class>
+        <caller>void Dispose(bool)</caller>
+        <method>MmResult acmDriverClose(IntPtr, int)</method>
+        <raw>NAudio.MmResult NAudio.Wave.Compression.AcmInterop::acmDriverClose(System.IntPtr,System.Int32)</raw>
+        <data>Msacm32.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>AcmStream</class>
+        <caller>void .ctor(WaveFormat, WaveFormat)</caller>
+        <method>MmResult acmStreamOpen(IntPtr&amp;, IntPtr, WaveFormat, WaveFormat, WaveFilter, IntPtr, IntPtr, AcmStreamOpenFlags)</method>
+        <raw>NAudio.MmResult NAudio.Wave.Compression.AcmInterop::acmStreamOpen(System.IntPtr&amp;,System.IntPtr,NAudio.Wave.WaveFormat,NAudio.Wave.WaveFormat,NAudio.Wave.Compression.WaveFilter,System.IntPtr,System.IntPtr,NAudio.Wave.Compression.AcmStreamOpenFlags)</raw>
+        <data>Msacm32.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>AcmStream</class>
+        <caller>void .ctor(IntPtr, WaveFormat, WaveFilter)</caller>
+        <method>MmResult acmDriverOpen(IntPtr&amp;, IntPtr, int)</method>
+        <raw>NAudio.MmResult NAudio.Wave.Compression.AcmInterop::acmDriverOpen(System.IntPtr&amp;,System.IntPtr,System.Int32)</raw>
+        <data>Msacm32.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>AcmStream</class>
+        <caller>void .ctor(IntPtr, WaveFormat, WaveFilter)</caller>
+        <method>MmResult acmStreamOpen(IntPtr&amp;, IntPtr, WaveFormat, WaveFormat, WaveFilter, IntPtr, IntPtr, AcmStreamOpenFlags)</method>
+        <raw>NAudio.MmResult NAudio.Wave.Compression.AcmInterop::acmStreamOpen(System.IntPtr&amp;,System.IntPtr,NAudio.Wave.WaveFormat,NAudio.Wave.WaveFormat,NAudio.Wave.Compression.WaveFilter,System.IntPtr,System.IntPtr,NAudio.Wave.Compression.AcmStreamOpenFlags)</raw>
+        <data>Msacm32.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>AcmStreamHeader</class>
+        <caller>void Prepare()</caller>
+        <method>MmResult acmStreamPrepareHeader(IntPtr, AcmStreamHeaderStruct, int)</method>
+        <raw>NAudio.MmResult NAudio.Wave.Compression.AcmInterop::acmStreamPrepareHeader(System.IntPtr,NAudio.Wave.Compression.AcmStreamHeaderStruct,System.Int32)</raw>
+        <data>Msacm32.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>AcmStreamHeader</class>
+        <caller>void Unprepare()</caller>
+        <method>MmResult acmStreamUnprepareHeader(IntPtr, AcmStreamHeaderStruct, int)</method>
+        <raw>NAudio.MmResult NAudio.Wave.Compression.AcmInterop::acmStreamUnprepareHeader(System.IntPtr,NAudio.Wave.Compression.AcmStreamHeaderStruct,System.Int32)</raw>
+        <data>Msacm32.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>AcmStreamHeader</class>
+        <caller>int Convert(int, Int32&amp;)</caller>
+        <method>MmResult acmStreamConvert(IntPtr, AcmStreamHeaderStruct, AcmStreamConvertFlags)</method>
+        <raw>NAudio.MmResult NAudio.Wave.Compression.AcmInterop::acmStreamConvert(System.IntPtr,NAudio.Wave.Compression.AcmStreamHeaderStruct,NAudio.Wave.AcmStreamConvertFlags)</raw>
+        <data>Msacm32.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveIn</class>
+        <caller>int get_DeviceCount()</caller>
+        <method>int waveInGetNumDevs()</method>
+        <raw>System.Int32 NAudio.Wave.WaveInterop::waveInGetNumDevs()</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveIn</class>
+        <caller>WaveInCapabilities GetCapabilities(int)</caller>
+        <method>MmResult waveInGetDevCaps(IntPtr, WaveInCapabilities&amp;, int)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveInGetDevCaps(System.IntPtr,NAudio.Wave.WaveInCapabilities&amp;,System.Int32)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveIn</class>
+        <caller>void StartRecording()</caller>
+        <method>MmResult waveInStart(IntPtr)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveInStart(System.IntPtr)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveIn</class>
+        <caller>void StopRecording()</caller>
+        <method>MmResult waveInStop(IntPtr)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveInStop(System.IntPtr)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveIn</class>
+        <caller>void CloseWaveInDevice()</caller>
+        <method>MmResult waveInReset(IntPtr)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveInReset(System.IntPtr)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveIn</class>
+        <caller>void CloseWaveInDevice()</caller>
+        <method>MmResult waveInClose(IntPtr)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveInClose(System.IntPtr)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MediaFoundationEncoder</class>
+        <caller>MediaType[] GetOutputMediaTypes(Guid)</caller>
+        <method>void MFTranscodeGetAudioOutputAvailableTypes(Guid, _MFT_ENUM_FLAG, IMFAttributes, IMFCollection&amp;)</method>
+        <raw>System.Void NAudio.MediaFoundation.MediaFoundationInterop::MFTranscodeGetAudioOutputAvailableTypes(System.Guid,NAudio.MediaFoundation._MFT_ENUM_FLAG,NAudio.MediaFoundation.IMFAttributes,NAudio.MediaFoundation.IMFCollection&amp;)</raw>
+        <data>mf.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MediaFoundationEncoder</class>
+        <caller>IMFSinkWriter CreateSinkWriter(string)</caller>
+        <method>void MFCreateSinkWriterFromURL(string, IMFByteStream, IMFAttributes, IMFSinkWriter&amp;)</method>
+        <raw>System.Void NAudio.MediaFoundation.MediaFoundationInterop::MFCreateSinkWriterFromURL(System.String,NAudio.MediaFoundation.IMFByteStream,NAudio.MediaFoundation.IMFAttributes,NAudio.MediaFoundation.IMFSinkWriter&amp;)</raw>
+        <data>mfreadwrite.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>DirectSoundOut</class>
+        <caller>DirectSoundDeviceInfo&gt; get_Devices()</caller>
+        <method>void DirectSoundEnumerate(DirectSoundOut/DSEnumCallback, IntPtr)</method>
+        <raw>System.Void NAudio.Wave.DirectSoundOut::DirectSoundEnumerate(NAudio.Wave.DirectSoundOut/DSEnumCallback,System.IntPtr)</raw>
+        <data>dsound.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>DirectSoundOut</class>
+        <caller>void InitializeDirectSound()</caller>
+        <method>void DirectSoundCreate(Guid&amp;, DirectSoundOut/IDirectSound&amp;, IntPtr)</method>
+        <raw>System.Void NAudio.Wave.DirectSoundOut::DirectSoundCreate(System.Guid&amp;,NAudio.Wave.DirectSoundOut/IDirectSound&amp;,System.IntPtr)</raw>
+        <data>dsound.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>DirectSoundOut</class>
+        <caller>void InitializeDirectSound()</caller>
+        <method>IntPtr GetDesktopWindow()</method>
+        <raw>System.IntPtr NAudio.Wave.DirectSoundOut::GetDesktopWindow()</raw>
+        <data>user32.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveCallbackInfo</class>
+        <caller>MmResult WaveOutOpen(IntPtr&amp;, int, WaveFormat, WaveInterop/WaveCallback)</caller>
+        <method>MmResult waveOutOpen(IntPtr&amp;, IntPtr, WaveFormat, WaveInterop/WaveCallback, IntPtr, WaveInterop/WaveInOutOpenFlags)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveOutOpen(System.IntPtr&amp;,System.IntPtr,NAudio.Wave.WaveFormat,NAudio.Wave.WaveInterop/WaveCallback,System.IntPtr,NAudio.Wave.WaveInterop/WaveInOutOpenFlags)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveCallbackInfo</class>
+        <caller>MmResult WaveOutOpen(IntPtr&amp;, int, WaveFormat, WaveInterop/WaveCallback)</caller>
+        <method>MmResult waveOutOpenWindow(IntPtr&amp;, IntPtr, WaveFormat, IntPtr, IntPtr, WaveInterop/WaveInOutOpenFlags)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveOutOpenWindow(System.IntPtr&amp;,System.IntPtr,NAudio.Wave.WaveFormat,System.IntPtr,System.IntPtr,NAudio.Wave.WaveInterop/WaveInOutOpenFlags)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveCallbackInfo</class>
+        <caller>MmResult WaveInOpen(IntPtr&amp;, int, WaveFormat, WaveInterop/WaveCallback)</caller>
+        <method>MmResult waveInOpen(IntPtr&amp;, IntPtr, WaveFormat, WaveInterop/WaveCallback, IntPtr, WaveInterop/WaveInOutOpenFlags)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveInOpen(System.IntPtr&amp;,System.IntPtr,NAudio.Wave.WaveFormat,NAudio.Wave.WaveInterop/WaveCallback,System.IntPtr,NAudio.Wave.WaveInterop/WaveInOutOpenFlags)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveCallbackInfo</class>
+        <caller>MmResult WaveInOpen(IntPtr&amp;, int, WaveFormat, WaveInterop/WaveCallback)</caller>
+        <method>MmResult waveInOpenWindow(IntPtr&amp;, IntPtr, WaveFormat, IntPtr, IntPtr, WaveInterop/WaveInOutOpenFlags)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveInOpenWindow(System.IntPtr&amp;,System.IntPtr,NAudio.Wave.WaveFormat,System.IntPtr,System.IntPtr,NAudio.Wave.WaveInterop/WaveInOutOpenFlags)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveOut</class>
+        <caller>WaveOutCapabilities GetCapabilities(int)</caller>
+        <method>MmResult waveOutGetDevCaps(IntPtr, WaveOutCapabilities&amp;, int)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveOutGetDevCaps(System.IntPtr,NAudio.Wave.WaveOutCapabilities&amp;,System.Int32)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveOut</class>
+        <caller>int get_DeviceCount()</caller>
+        <method>int waveOutGetNumDevs()</method>
+        <raw>System.Int32 NAudio.Wave.WaveInterop::waveOutGetNumDevs()</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveOut</class>
+        <caller>void Pause()</caller>
+        <method>MmResult waveOutPause(IntPtr)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveOutPause(System.IntPtr)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveOut</class>
+        <caller>void Resume()</caller>
+        <method>MmResult waveOutRestart(IntPtr)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveOutRestart(System.IntPtr)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveOut</class>
+        <caller>void Stop()</caller>
+        <method>MmResult waveOutReset(IntPtr)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveOutReset(System.IntPtr)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveOut</class>
+        <caller>Int64 GetPosition()</caller>
+        <method>MmResult waveOutGetPosition(IntPtr, MmTime&amp;, int)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveOutGetPosition(System.IntPtr,NAudio.Wave.MmTime&amp;,System.Int32)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveOut</class>
+        <caller>void set_Volume(Single)</caller>
+        <method>MmResult waveOutSetVolume(IntPtr, int)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveOutSetVolume(System.IntPtr,System.Int32)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveOut</class>
+        <caller>void Dispose(bool)</caller>
+        <method>MmResult waveOutClose(IntPtr)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveOutClose(System.IntPtr)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveOutEvent</class>
+        <caller>void Init(IWaveProvider)</caller>
+        <method>MmResult waveOutOpenWindow(IntPtr&amp;, IntPtr, WaveFormat, IntPtr, IntPtr, WaveInterop/WaveInOutOpenFlags)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveOutOpenWindow(System.IntPtr&amp;,System.IntPtr,NAudio.Wave.WaveFormat,System.IntPtr,System.IntPtr,NAudio.Wave.WaveInterop/WaveInOutOpenFlags)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveOutEvent</class>
+        <caller>void Pause()</caller>
+        <method>MmResult waveOutPause(IntPtr)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveOutPause(System.IntPtr)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveOutEvent</class>
+        <caller>void Resume()</caller>
+        <method>MmResult waveOutRestart(IntPtr)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveOutRestart(System.IntPtr)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveOutEvent</class>
+        <caller>void Stop()</caller>
+        <method>MmResult waveOutReset(IntPtr)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveOutReset(System.IntPtr)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveOutEvent</class>
+        <caller>Int64 GetPosition()</caller>
+        <method>MmResult waveOutGetPosition(IntPtr, MmTime&amp;, int)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveOutGetPosition(System.IntPtr,NAudio.Wave.MmTime&amp;,System.Int32)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveOutEvent</class>
+        <caller>void CloseWaveOut()</caller>
+        <method>MmResult waveOutClose(IntPtr)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveOutClose(System.IntPtr)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MediaFoundationReader</class>
+        <caller>IMFSourceReader CreateReader(MediaFoundationReader/MediaFoundationReaderSettings)</caller>
+        <method>void MFCreateSourceReaderFromURL(string, IMFAttributes, IMFSourceReader&amp;)</method>
+        <raw>System.Void NAudio.MediaFoundation.MediaFoundationInterop::MFCreateSourceReaderFromURL(System.String,NAudio.MediaFoundation.IMFAttributes,NAudio.MediaFoundation.IMFSourceReader&amp;)</raw>
+        <data>mfreadwrite.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveInBuffer</class>
+        <caller>void Reuse()</caller>
+        <method>MmResult waveInUnprepareHeader(IntPtr, WaveHeader, int)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveInUnprepareHeader(System.IntPtr,NAudio.Wave.WaveHeader,System.Int32)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveInBuffer</class>
+        <caller>void Reuse()</caller>
+        <method>MmResult waveInPrepareHeader(IntPtr, WaveHeader, int)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveInPrepareHeader(System.IntPtr,NAudio.Wave.WaveHeader,System.Int32)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveInBuffer</class>
+        <caller>void Reuse()</caller>
+        <method>MmResult waveInAddBuffer(IntPtr, WaveHeader, int)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveInAddBuffer(System.IntPtr,NAudio.Wave.WaveHeader,System.Int32)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveInBuffer</class>
+        <caller>void Dispose(bool)</caller>
+        <method>MmResult waveInUnprepareHeader(IntPtr, WaveHeader, int)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveInUnprepareHeader(System.IntPtr,NAudio.Wave.WaveHeader,System.Int32)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveInBuffer</class>
+        <caller>void .ctor(IntPtr, int)</caller>
+        <method>MmResult waveInPrepareHeader(IntPtr, WaveHeader, int)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveInPrepareHeader(System.IntPtr,NAudio.Wave.WaveHeader,System.Int32)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveOutBuffer</class>
+        <caller>void Dispose(bool)</caller>
+        <method>MmResult waveOutUnprepareHeader(IntPtr, WaveHeader, int)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveOutUnprepareHeader(System.IntPtr,NAudio.Wave.WaveHeader,System.Int32)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveOutBuffer</class>
+        <caller>void WriteToWaveOut()</caller>
+        <method>MmResult waveOutWrite(IntPtr, WaveHeader, int)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveOutWrite(System.IntPtr,NAudio.Wave.WaveHeader,System.Int32)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WaveOutBuffer</class>
+        <caller>void .ctor(IntPtr, int, IWaveProvider, Object)</caller>
+        <method>MmResult waveOutPrepareHeader(IntPtr, WaveHeader, int)</method>
+        <raw>NAudio.MmResult NAudio.Wave.WaveInterop::waveOutPrepareHeader(System.IntPtr,NAudio.Wave.WaveHeader,System.Int32)</raw>
+        <data>winmm.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>MediaFoundationApi/&lt;EnumerateTransforms&gt;d__0</class>
+        <caller>bool MoveNext()</caller>
+        <method>void MFTEnumEx(Guid, _MFT_ENUM_FLAG, MFT_REGISTER_TYPE_INFO, MFT_REGISTER_TYPE_INFO, IntPtr&amp;, Int32&amp;)</method>
+        <raw>System.Void NAudio.MediaFoundation.MediaFoundationInterop::MFTEnumEx(System.Guid,NAudio.MediaFoundation._MFT_ENUM_FLAG,NAudio.MediaFoundation.MFT_REGISTER_TYPE_INFO,NAudio.MediaFoundation.MFT_REGISTER_TYPE_INFO,System.IntPtr&amp;,System.Int32&amp;)</raw>
+        <data>mfplat.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>DmoEnumerator/&lt;GetDmos&gt;d__0</class>
+        <caller>bool MoveNext()</caller>
+        <method>int DMOEnum(Guid&amp;, DmoEnumFlags, int, DmoPartialMediaType[], int, DmoPartialMediaType[], IEnumDmo&amp;)</method>
+        <raw>System.Int32 NAudio.Dmo.DmoInterop::DMOEnum(System.Guid&amp;,NAudio.Dmo.DmoEnumFlags,System.Int32,NAudio.Dmo.DmoPartialMediaType[],System.Int32,NAudio.Dmo.DmoPartialMediaType[],NAudio.Dmo.IEnumDmo&amp;)</raw>
+        <data>msdmo.dll</data>
+      </issue>
+    </assembly>
+    <assembly name="NAudio.WindowsMediaFormat.dll" version="1.0.1.0" runtime="2.0" todo="0" niex="0" miss="0" pinv="15">
+      <issue type="pinv">
+        <class>WM</class>
+        <caller>IWMReader CreateReader(WMT_RIGHTS)</caller>
+        <method>int WMCreateReader(IntPtr, WMT_RIGHTS, IWMReader&amp;)</method>
+        <raw>System.Int32 NAudio.WindowsMediaFormat.WM::WMCreateReader(System.IntPtr,NAudio.WindowsMediaFormat.WMT_RIGHTS,NAudio.WindowsMediaFormat.IWMReader&amp;)</raw>
+        <data>WMVCore.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WM</class>
+        <caller>IWMSyncReader CreateSyncReader(WMT_RIGHTS)</caller>
+        <method>int WMCreateSyncReader(IntPtr, WMT_RIGHTS, IWMSyncReader&amp;)</method>
+        <raw>System.Int32 NAudio.WindowsMediaFormat.WM::WMCreateSyncReader(System.IntPtr,NAudio.WindowsMediaFormat.WMT_RIGHTS,NAudio.WindowsMediaFormat.IWMSyncReader&amp;)</raw>
+        <data>WMVCore.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WM</class>
+        <caller>IWMProfileManager CreateProfileManager()</caller>
+        <method>int WMCreateProfileManager(IWMProfileManager&amp;)</method>
+        <raw>System.Int32 NAudio.WindowsMediaFormat.WM::WMCreateProfileManager(NAudio.WindowsMediaFormat.IWMProfileManager&amp;)</raw>
+        <data>WMVCore.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WM</class>
+        <caller>IWMMetadataEditor CreateEditor()</caller>
+        <method>int WMCreateEditor(IWMMetadataEditor&amp;)</method>
+        <raw>System.Int32 NAudio.WindowsMediaFormat.WM::WMCreateEditor(NAudio.WindowsMediaFormat.IWMMetadataEditor&amp;)</raw>
+        <data>WMVCore.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WM</class>
+        <caller>IWMIndexer CreateIndexer()</caller>
+        <method>int WMCreateIndexer(IWMIndexer&amp;)</method>
+        <raw>System.Int32 NAudio.WindowsMediaFormat.WM::WMCreateIndexer(NAudio.WindowsMediaFormat.IWMIndexer&amp;)</raw>
+        <data>WMVCore.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WM</class>
+        <caller>IWMWriter CreateWriter()</caller>
+        <method>int WMCreateWriter(IntPtr, IWMWriter&amp;)</method>
+        <raw>System.Int32 NAudio.WindowsMediaFormat.WM::WMCreateWriter(System.IntPtr,NAudio.WindowsMediaFormat.IWMWriter&amp;)</raw>
+        <data>WMVCore.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WM</class>
+        <caller>IWMWriterFileSink CreateWriterFileSink()</caller>
+        <method>int WMCreateWriterFileSink(IWMWriterFileSink&amp;)</method>
+        <raw>System.Int32 NAudio.WindowsMediaFormat.WM::WMCreateWriterFileSink(NAudio.WindowsMediaFormat.IWMWriterFileSink&amp;)</raw>
+        <data>WMVCore.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WM</class>
+        <caller>IWMWriterNetworkSink CreateWriterNetworkSink()</caller>
+        <method>int WMCreateWriterNetworkSink(IWMWriterNetworkSink&amp;)</method>
+        <raw>System.Int32 NAudio.WindowsMediaFormat.WM::WMCreateWriterNetworkSink(NAudio.WindowsMediaFormat.IWMWriterNetworkSink&amp;)</raw>
+        <data>WMVCore.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WM</class>
+        <caller>IWMWriterPushSink CreateWriterPushSink()</caller>
+        <method>int WMCreateWriterPushSink(IWMWriterPushSink&amp;)</method>
+        <raw>System.Int32 NAudio.WindowsMediaFormat.WM::WMCreateWriterPushSink(NAudio.WindowsMediaFormat.IWMWriterPushSink&amp;)</raw>
+        <data>WMVCore.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WM</class>
+        <caller>bool IsAvailableOffline(string, string)</caller>
+        <method>int WMIsAvailableOffline(string, string, Boolean&amp;)</method>
+        <raw>System.Int32 NAudio.WindowsMediaFormat.WM::WMIsAvailableOffline(System.String,System.String,System.Boolean&amp;)</raw>
+        <data>WMVCore.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WM</class>
+        <caller>bool IsContentProtected(string)</caller>
+        <method>int WMIsContentProtected(string, Boolean&amp;)</method>
+        <raw>System.Int32 NAudio.WindowsMediaFormat.WM::WMIsContentProtected(System.String,System.Boolean&amp;)</raw>
+        <data>WMVCore.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WM</class>
+        <caller>void ValidateData(Byte[])</caller>
+        <method>int WMValidateData(Byte[], UInt32&amp;)</method>
+        <raw>System.Int32 NAudio.WindowsMediaFormat.WM::WMValidateData(System.Byte[],System.UInt32&amp;)</raw>
+        <data>WMVCore.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WM</class>
+        <caller>uint get_ValidateDataMinBuffSize()</caller>
+        <method>int WMValidateData(Byte[], UInt32&amp;)</method>
+        <raw>System.Int32 NAudio.WindowsMediaFormat.WM::WMValidateData(System.Byte[],System.UInt32&amp;)</raw>
+        <data>WMVCore.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WM</class>
+        <caller>bool CheckURLExtension(string)</caller>
+        <method>int WMCheckURLExtension(string)</method>
+        <raw>System.Int32 NAudio.WindowsMediaFormat.WM::WMCheckURLExtension(System.String)</raw>
+        <data>WMVCore.dll</data>
+      </issue>
+      <issue type="pinv">
+        <class>WM</class>
+        <caller>bool CheckURLScheme(string)</caller>
+        <method>int WMCheckURLScheme(string)</method>
+        <raw>System.Int32 NAudio.WindowsMediaFormat.WM::WMCheckURLScheme(System.String)</raw>
+        <data>WMVCore.dll</data>
+      </issue>
+    </assembly>
+  </assemblies>
+</report>

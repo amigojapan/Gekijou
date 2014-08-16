@@ -1,0 +1,17 @@
+C:\Users\anonymous\Documents\Visual Studio 2010\Projects\Gekijou\Gekijou\bin\Debug\Gekijou.exe
+C:\Users\anonymous\Documents\Visual Studio 2010\Projects\Gekijou\Gekijou\bin\Debug\Gekijou.pdb
+C:\Users\anonymous\Documents\Visual Studio 2010\Projects\Gekijou\Gekijou\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\anonymous\Documents\Visual Studio 2010\Projects\Gekijou\Gekijou\obj\x86\Debug\Gekijou.exe
+C:\Users\anonymous\Documents\Visual Studio 2010\Projects\Gekijou\Gekijou\obj\x86\Debug\Gekijou.pdb
+C:\Users\anonymous\Documents\Visual Studio 2010\Projects\Gekijou\Gekijou\obj\x86\Debug\WindowsFormsApplication1.frmMain.resources
+C:\Users\anonymous\Documents\Visual Studio 2010\Projects\Gekijou\Gekijou\obj\x86\Debug\WindowsFormsApplication1.frmSprite.resources
+C:\Users\anonymous\Documents\Visual Studio 2010\Projects\Gekijou\Gekijou\bin\Debug\Gekijou.exe.manifest
+C:\Users\anonymous\Documents\Visual Studio 2010\Projects\Gekijou\Gekijou\bin\Debug\Gekijou.application
+C:\Users\anonymous\Documents\Visual Studio 2010\Projects\Gekijou\Gekijou\obj\x86\Debug\Gekijou.exe.manifest
+C:\Users\anonymous\Documents\Visual Studio 2010\Projects\Gekijou\Gekijou\obj\x86\Debug\Gekijou.application
+C:\Users\anonymous\Documents\Visual Studio 2010\Projects\Gekijou\Gekijou\bin\Debug\Gekijou.exe.config
+C:\Users\anonymous\Documents\Visual Studio 2010\Projects\Gekijou\Gekijou\obj\x86\Debug\WindowsFormsApplication1.UserControl1.resources
+C:\Users\anonymous\Documents\Visual Studio 2010\Projects\Gekijou\Gekijou\obj\x86\Debug\WindowsFormsApplication1.frmCharacterSettings.resources
+C:\Users\anonymous\Documents\Visual Studio 2010\Projects\Gekijou\Gekijou\obj\x86\Debug\Gekijou.csprojResolveAssemblyReference.cache
+C:\Users\anonymous\Documents\Visual Studio 2010\Projects\Gekijou\Gekijou\obj\x86\Debug\Gekijou.csproj.GenerateResource.Cache
+C:\Users\anonymous\Documents\Visual Studio 2010\Projects\Gekijou\Gekijou\obj\x86\Debug\WindowsFormsApplication1.frmAppSettings.resources

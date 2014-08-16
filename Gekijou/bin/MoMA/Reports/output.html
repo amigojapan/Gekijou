@@ -1,0 +1,820 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>MoMA Scan Results</title>
+<link rel="stylesheet" type="text/css" href="Media/moma.css" />
+<script type="text/ecmascript" src="Media/moma.js"></script>
+</head>
+<body>
+    <div class='header'>
+        <div class='headertext'>MoMA Scan Results</div>
+    </div>
+    <div class='wrapper'>
+    <div class='legend'>
+      <div>
+        Scan Date: 2014/02/03 14:38:52<br/>
+        MoMA Definitions: Mono 2.8 (4.0 Profile)<br/><br/>
+        For descriptions of issues, see <a href='http://www.mono-project.com/MoMA_-_Issue_Descriptions'>MoMA Issue Descriptions</a>.
+      </div>
+    </div>
+    <table class='results-table'>
+      <thead>
+        <tr>
+          <th scope='col'></th>
+          <th scope='col'></th>
+          <th scope='col'>Assembly</th>
+          <th scope='col'>Version</th>
+          <th scope='col'>Missing</th>
+          <th scope='col'>Not Implemented</th>
+          <th scope='col'>Todo</th>
+          <th scope='col'>P/Invoke</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class='errorrow' onclick='toggle("el1", "img1")'>
+          <td style='width: 10px'><img id='img1' src='Media/plus.png' /></td>
+          <td style='width: 16px'><img src='Media/fail.png' /></td>
+          <td>Gekijou.exe</td>
+          <td>1.0.0.0</td>
+          <td>5</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr id='el1' class='errorlist' style='display: none'>
+          <td></td>
+          <td colspan='7'>
+            <table cellpadding='2' cellspacing='0' width='100%' class='inner-results'>
+              <tr class='inner-header'>
+              <td>Calling Method</td>
+              <td colspan='2'>Method Missing from Mono</td>
+              </tr>
+              <tr>
+              <td>void button1_Click (Object, EventArgs)</td>
+              <td colspan='2'>void SpeechSynthesizer..ctor ()</td>
+              </tr>
+              <tr>
+              <td>void button1_Click (Object, EventArgs)</td>
+              <td colspan='2'>void SpeechSynthesizer.SetOutputToDefaultAudioDevice ()</td>
+              </tr>
+              <tr>
+              <td>void button1_Click (Object, EventArgs)</td>
+              <td colspan='2'>void SpeechAudioFormatInfo..ctor (int, AudioBitsPerSample, AudioChannel)</td>
+              </tr>
+              <tr>
+              <td>void button1_Click (Object, EventArgs)</td>
+              <td colspan='2'>void SpeechSynthesizer.SetOutputToWaveFile (string, SpeechAudioFormatInfo)</td>
+              </tr>
+              <tr>
+              <td>void button1_Click (Object, EventArgs)</td>
+              <td colspan='2'>void SpeechSynthesizer.Speak (string)</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr class='errorrow' onclick='toggle("el2", "img2")'>
+          <td style='width: 10px'><img id='img2' src='Media/plus.png' /></td>
+          <td style='width: 16px'><img src='Media/fail.png' /></td>
+          <td>NAudio.dll</td>
+          <td>1.7.0.15</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>122</td>
+        </tr>
+        <tr id='el2' class='errorlist' style='display: none'>
+          <td></td>
+          <td colspan='7'>
+            <table cellpadding='2' cellspacing='0' width='100%' class='inner-results'>
+              <tr class='inner-header'>
+              <td>Calling Method</td>
+              <td>P/Invoke Method</td>
+              <td>P/Invoke Library</td>
+              </tr>
+              <tr>
+              <td>void Startup ()</td>
+              <td>void MediaFoundationInterop.MFStartup (int, int)</td>
+              <td>mfplat.dll</td>
+              </tr>
+              <tr>
+              <td>void Shutdown ()</td>
+              <td>void MediaFoundationInterop.MFShutdown ()</td>
+              <td>mfplat.dll</td>
+              </tr>
+              <tr>
+              <td>IMFMediaType CreateMediaType ()</td>
+              <td>void MediaFoundationInterop.MFCreateMediaType (IMFMediaType&)</td>
+              <td>mfplat.dll</td>
+              </tr>
+              <tr>
+              <td>IMFMediaType CreateMediaTypeFromWaveFormat (WaveFormat)</td>
+              <td>void MediaFoundationInterop.MFInitMediaTypeFromWaveFormatEx (IMFMediaType, WaveFormat, int)</td>
+              <td>mfplat.dll</td>
+              </tr>
+              <tr>
+              <td>IMFMediaBuffer CreateMemoryBuffer (int)</td>
+              <td>void MediaFoundationInterop.MFCreateMemoryBuffer (int, IMFMediaBuffer&)</td>
+              <td>mfplat.dll</td>
+              </tr>
+              <tr>
+              <td>IMFSample CreateSample ()</td>
+              <td>void MediaFoundationInterop.MFCreateSample (IMFSample&)</td>
+              <td>mfplat.dll</td>
+              </tr>
+              <tr>
+              <td>IMFAttributes CreateAttributes (int)</td>
+              <td>void MediaFoundationInterop.MFCreateAttributes (IMFAttributes&, int)</td>
+              <td>mfplat.dll</td>
+              </tr>
+              <tr>
+              <td>IMFByteStream CreateByteStream (Object)</td>
+              <td>void MediaFoundationInterop.MFCreateMFByteStreamOnStreamEx (Object, IMFByteStream&)</td>
+              <td>mfplat.dll</td>
+              </tr>
+              <tr>
+              <td>IMFSourceReader CreateSourceReaderFromByteStream (IMFByteStream)</td>
+              <td>void MediaFoundationInterop.MFCreateSourceReaderFromByteStream (IMFByteStream, IMFAttributes, IMFSourceReader&)</td>
+              <td>mfreadwrite.dll</td>
+              </tr>
+              <tr>
+              <td>int get_DeviceCount ()</td>
+              <td>int WaveInterop.waveInGetNumDevs ()</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>WaveInCapabilities GetCapabilities (int)</td>
+              <td>MmResult WaveInterop.waveInGetDevCaps (IntPtr, WaveInCapabilities&, int)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void OpenWaveInDevice ()</td>
+              <td>MmResult WaveInterop.waveInOpenWindow (IntPtr&, IntPtr, WaveFormat, IntPtr, IntPtr, WaveInterop/WaveInOutOpenFlags)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void StartRecording ()</td>
+              <td>MmResult WaveInterop.waveInStart (IntPtr)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void StopRecording ()</td>
+              <td>MmResult WaveInterop.waveInStop (IntPtr)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void CloseWaveInDevice ()</td>
+              <td>MmResult WaveInterop.waveInReset (IntPtr)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void CloseWaveInDevice ()</td>
+              <td>MmResult WaveInterop.waveInClose (IntPtr)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>DmoMediaType> GetInputType (int, int)</td>
+              <td>int DmoInterop.MoFreeMediaType (DmoMediaType&)</td>
+              <td>msdmo.dll</td>
+              </tr>
+              <tr>
+              <td>DmoMediaType> GetOutputType (int, int)</td>
+              <td>int DmoInterop.MoFreeMediaType (DmoMediaType&)</td>
+              <td>msdmo.dll</td>
+              </tr>
+              <tr>
+              <td>DmoMediaType GetOutputCurrentType (int)</td>
+              <td>int DmoInterop.MoFreeMediaType (DmoMediaType&)</td>
+              <td>msdmo.dll</td>
+              </tr>
+              <tr>
+              <td>void SetInputWaveFormat (int, WaveFormat)</td>
+              <td>int DmoInterop.MoFreeMediaType (DmoMediaType&)</td>
+              <td>msdmo.dll</td>
+              </tr>
+              <tr>
+              <td>bool SupportsInputWaveFormat (int, WaveFormat)</td>
+              <td>int DmoInterop.MoFreeMediaType (DmoMediaType&)</td>
+              <td>msdmo.dll</td>
+              </tr>
+              <tr>
+              <td>DmoMediaType CreateDmoMediaTypeForWaveFormat (WaveFormat)</td>
+              <td>int DmoInterop.MoInitMediaType (DmoMediaType&, int)</td>
+              <td>msdmo.dll</td>
+              </tr>
+              <tr>
+              <td>bool SupportsOutputWaveFormat (int, WaveFormat)</td>
+              <td>int DmoInterop.MoFreeMediaType (DmoMediaType&)</td>
+              <td>msdmo.dll</td>
+              </tr>
+              <tr>
+              <td>void SetOutputWaveFormat (int, WaveFormat)</td>
+              <td>int DmoInterop.MoFreeMediaType (DmoMediaType&)</td>
+              <td>msdmo.dll</td>
+              </tr>
+              <tr>
+              <td>int get_NumberOfDevices ()</td>
+              <td>int MidiInterop.midiInGetNumDevs ()</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void Start ()</td>
+              <td>MmResult MidiInterop.midiInStart (IntPtr)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void Stop ()</td>
+              <td>MmResult MidiInterop.midiInStop (IntPtr)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void Reset ()</td>
+              <td>MmResult MidiInterop.midiInReset (IntPtr)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>MidiInCapabilities DeviceInfo (int)</td>
+              <td>MmResult MidiInterop.midiInGetDevCaps (IntPtr, MidiInCapabilities&, int)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void Dispose (bool)</td>
+              <td>MmResult MidiInterop.midiInClose (IntPtr)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void .ctor (int)</td>
+              <td>MmResult MidiInterop.midiInOpen (IntPtr&, IntPtr, MidiInterop/MidiInCallback, IntPtr, int)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>int get_NumberOfDevices ()</td>
+              <td>int MidiInterop.midiOutGetNumDevs ()</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>MidiOutCapabilities DeviceInfo (int)</td>
+              <td>MmResult MidiInterop.midiOutGetDevCaps (IntPtr, MidiOutCapabilities&, int)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>int get_Volume ()</td>
+              <td>MmResult MidiInterop.midiOutGetVolume (IntPtr, Int32&)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void set_Volume (int)</td>
+              <td>MmResult MidiInterop.midiOutSetVolume (IntPtr, int)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void Reset ()</td>
+              <td>MmResult MidiInterop.midiOutReset (IntPtr)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void SendDriverMessage (int, int, int)</td>
+              <td>MmResult MidiInterop.midiOutMessage (IntPtr, int, IntPtr, IntPtr)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void Send (int)</td>
+              <td>MmResult MidiInterop.midiOutShortMsg (IntPtr, int)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void Dispose (bool)</td>
+              <td>MmResult MidiInterop.midiOutClose (IntPtr)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void SendBuffer (Byte[])</td>
+              <td>MmResult MidiInterop.midiOutPrepareHeader (IntPtr, MidiInterop/MIDIHDR&, int)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void SendBuffer (Byte[])</td>
+              <td>MmResult MidiInterop.midiOutLongMsg (IntPtr, MidiInterop/MIDIHDR&, int)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void SendBuffer (Byte[])</td>
+              <td>MmResult MidiInterop.midiOutUnprepareHeader (IntPtr, MidiInterop/MIDIHDR&, int)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void .ctor (int)</td>
+              <td>MmResult MidiInterop.midiOutOpen (IntPtr&, IntPtr, MidiInterop/MidiOutCallback, IntPtr, int)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>MixerControl> GetMixerControls (IntPtr, MixerLine, MixerFlags)</td>
+              <td>MmResult MixerInterop.mixerGetLineControls (IntPtr, MixerInterop/MIXERLINECONTROLS&, MixerFlags)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>MixerControl GetMixerControl (IntPtr, int, int, int, MixerFlags)</td>
+              <td>MmResult MixerInterop.mixerGetLineControls (IntPtr, MixerInterop/MIXERLINECONTROLS&, MixerFlags)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void GetControlDetails ()</td>
+              <td>MmResult MixerInterop.mixerGetControlDetails (IntPtr, MixerInterop/MIXERCONTROLDETAILS&, MixerFlags)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void set_Value (bool)</td>
+              <td>MmResult MixerInterop.mixerSetControlDetails (IntPtr, MixerInterop/MIXERCONTROLDETAILS&, MixerFlags)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>int get_NumberOfDevices ()</td>
+              <td>int MixerInterop.mixerGetNumDevs ()</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void .ctor (int)</td>
+              <td>MmResult MixerInterop.mixerGetDevCaps (IntPtr, MixerInterop/MIXERCAPS&, int)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>int GetMixerIdForWaveIn (int)</td>
+              <td>MmResult MixerInterop.mixerGetID (IntPtr, Int32&, MixerFlags)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void .ctor (IntPtr, int, MixerFlags)</td>
+              <td>MmResult MixerInterop.mixerGetLineInfo (IntPtr, MixerInterop/MIXERLINE&, MixerFlags)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void .ctor (IntPtr, int, int, MixerFlags)</td>
+              <td>MmResult MixerInterop.mixerGetLineInfo (IntPtr, MixerInterop/MIXERLINE&, MixerFlags)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void set_Value (int)</td>
+              <td>MmResult MixerInterop.mixerSetControlDetails (IntPtr, MixerInterop/MIXERCONTROLDETAILS&, MixerFlags)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void set_Value (uint)</td>
+              <td>MmResult MixerInterop.mixerSetControlDetails (IntPtr, MixerInterop/MIXERCONTROLDETAILS&, MixerFlags)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void Clear ()</td>
+              <td>int PropVariant.PropVariantClear (PropVariant&)</td>
+              <td>ole32.dll</td>
+              </tr>
+              <tr>
+              <td>void initFromGuid (Guid)</td>
+              <td>int ASIODriver.CoCreateInstance (Guid&, IntPtr, uint, Guid&, IntPtr&)</td>
+              <td>ole32.Dll</td>
+              </tr>
+              <tr>
+              <td>AcmDriver AddLocalDriver (string)</td>
+              <td>IntPtr NativeMethods.LoadLibrary (string)</td>
+              <td>kernel32.dll</td>
+              </tr>
+              <tr>
+              <td>AcmDriver AddLocalDriver (string)</td>
+              <td>IntPtr NativeMethods.GetProcAddress (IntPtr, string)</td>
+              <td>kernel32.dll</td>
+              </tr>
+              <tr>
+              <td>AcmDriver AddLocalDriver (string)</td>
+              <td>bool NativeMethods.FreeLibrary (IntPtr)</td>
+              <td>kernel32.dll</td>
+              </tr>
+              <tr>
+              <td>AcmDriver AddLocalDriver (string)</td>
+              <td>MmResult AcmInterop.acmDriverAdd (IntPtr&, IntPtr, IntPtr, int, AcmDriverAddFlags)</td>
+              <td>msacm32.dll</td>
+              </tr>
+              <tr>
+              <td>AcmDriver AddLocalDriver (string)</td>
+              <td>bool NativeMethods.FreeLibrary (IntPtr)</td>
+              <td>kernel32.dll</td>
+              </tr>
+              <tr>
+              <td>void RemoveLocalDriver (AcmDriver)</td>
+              <td>MmResult AcmInterop.acmDriverRemove (IntPtr, int)</td>
+              <td>msacm32.dll</td>
+              </tr>
+              <tr>
+              <td>void RemoveLocalDriver (AcmDriver)</td>
+              <td>bool NativeMethods.FreeLibrary (IntPtr)</td>
+              <td>kernel32.dll</td>
+              </tr>
+              <tr>
+              <td>bool ShowFormatChooseDialog (IntPtr, string, AcmFormatEnumFlags, WaveFormat, WaveFormat&, String&, String&)</td>
+              <td>MmResult AcmInterop.acmFormatChoose (AcmFormatChoose&)</td>
+              <td>Msacm32.dll</td>
+              </tr>
+              <tr>
+              <td>int get_MaxFormatSize ()</td>
+              <td>MmResult AcmInterop.acmMetrics (IntPtr, AcmMetrics, Int32&)</td>
+              <td>Msacm32.dll</td>
+              </tr>
+              <tr>
+              <td>AcmDriver> EnumerateAcmDrivers ()</td>
+              <td>MmResult AcmInterop.acmDriverEnum (AcmInterop/AcmDriverEnumCallback, IntPtr, AcmDriverEnumFlags)</td>
+              <td>Msacm32.dll</td>
+              </tr>
+              <tr>
+              <td>AcmFormatTag> get_FormatTags ()</td>
+              <td>MmResult AcmInterop.acmFormatTagEnum (IntPtr, AcmFormatTagDetails&, AcmInterop/AcmFormatTagEnumCallback, IntPtr, int)</td>
+              <td>Msacm32.dll</td>
+              </tr>
+              <tr>
+              <td>AcmFormat> GetFormats (AcmFormatTag)</td>
+              <td>MmResult AcmInterop.acmFormatEnum (IntPtr, AcmFormatDetails&, AcmInterop/AcmFormatEnumCallback, IntPtr, AcmFormatEnumFlags)</td>
+              <td>Msacm32.dll</td>
+              </tr>
+              <tr>
+              <td>void Open ()</td>
+              <td>MmResult AcmInterop.acmDriverOpen (IntPtr&, IntPtr, int)</td>
+              <td>Msacm32.dll</td>
+              </tr>
+              <tr>
+              <td>void Close ()</td>
+              <td>MmResult AcmInterop.acmDriverClose (IntPtr, int)</td>
+              <td>Msacm32.dll</td>
+              </tr>
+              <tr>
+              <td>void .ctor (IntPtr)</td>
+              <td>MmResult AcmInterop.acmDriverDetails (IntPtr, AcmDriverDetails&, int)</td>
+              <td>Msacm32.dll</td>
+              </tr>
+              <tr>
+              <td>int SourceToDest (int)</td>
+              <td>MmResult AcmInterop.acmStreamSize (IntPtr, int, Int32&, AcmStreamSizeFlags)</td>
+              <td>Msacm32.dll</td>
+              </tr>
+              <tr>
+              <td>int DestToSource (int)</td>
+              <td>MmResult AcmInterop.acmStreamSize (IntPtr, int, Int32&, AcmStreamSizeFlags)</td>
+              <td>Msacm32.dll</td>
+              </tr>
+              <tr>
+              <td>WaveFormat SuggestPcmFormat (WaveFormat)</td>
+              <td>MmResult AcmInterop.acmFormatSuggest (IntPtr, WaveFormat, WaveFormat, int, AcmFormatSuggestFlags)</td>
+              <td>Msacm32.dll</td>
+              </tr>
+              <tr>
+              <td>void Dispose (bool)</td>
+              <td>MmResult AcmInterop.acmStreamClose (IntPtr, int)</td>
+              <td>Msacm32.dll</td>
+              </tr>
+              <tr>
+              <td>void Dispose (bool)</td>
+              <td>MmResult AcmInterop.acmDriverClose (IntPtr, int)</td>
+              <td>Msacm32.dll</td>
+              </tr>
+              <tr>
+              <td>void .ctor (WaveFormat, WaveFormat)</td>
+              <td>MmResult AcmInterop.acmStreamOpen (IntPtr&, IntPtr, WaveFormat, WaveFormat, WaveFilter, IntPtr, IntPtr, AcmStreamOpenFlags)</td>
+              <td>Msacm32.dll</td>
+              </tr>
+              <tr>
+              <td>void .ctor (IntPtr, WaveFormat, WaveFilter)</td>
+              <td>MmResult AcmInterop.acmDriverOpen (IntPtr&, IntPtr, int)</td>
+              <td>Msacm32.dll</td>
+              </tr>
+              <tr>
+              <td>void .ctor (IntPtr, WaveFormat, WaveFilter)</td>
+              <td>MmResult AcmInterop.acmStreamOpen (IntPtr&, IntPtr, WaveFormat, WaveFormat, WaveFilter, IntPtr, IntPtr, AcmStreamOpenFlags)</td>
+              <td>Msacm32.dll</td>
+              </tr>
+              <tr>
+              <td>void Prepare ()</td>
+              <td>MmResult AcmInterop.acmStreamPrepareHeader (IntPtr, AcmStreamHeaderStruct, int)</td>
+              <td>Msacm32.dll</td>
+              </tr>
+              <tr>
+              <td>void Unprepare ()</td>
+              <td>MmResult AcmInterop.acmStreamUnprepareHeader (IntPtr, AcmStreamHeaderStruct, int)</td>
+              <td>Msacm32.dll</td>
+              </tr>
+              <tr>
+              <td>int Convert (int, Int32&)</td>
+              <td>MmResult AcmInterop.acmStreamConvert (IntPtr, AcmStreamHeaderStruct, AcmStreamConvertFlags)</td>
+              <td>Msacm32.dll</td>
+              </tr>
+              <tr>
+              <td>int get_DeviceCount ()</td>
+              <td>int WaveInterop.waveInGetNumDevs ()</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>WaveInCapabilities GetCapabilities (int)</td>
+              <td>MmResult WaveInterop.waveInGetDevCaps (IntPtr, WaveInCapabilities&, int)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void StartRecording ()</td>
+              <td>MmResult WaveInterop.waveInStart (IntPtr)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void StopRecording ()</td>
+              <td>MmResult WaveInterop.waveInStop (IntPtr)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void CloseWaveInDevice ()</td>
+              <td>MmResult WaveInterop.waveInReset (IntPtr)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void CloseWaveInDevice ()</td>
+              <td>MmResult WaveInterop.waveInClose (IntPtr)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>MediaType[] GetOutputMediaTypes (Guid)</td>
+              <td>void MediaFoundationInterop.MFTranscodeGetAudioOutputAvailableTypes (Guid, _MFT_ENUM_FLAG, IMFAttributes, IMFCollection&)</td>
+              <td>mf.dll</td>
+              </tr>
+              <tr>
+              <td>IMFSinkWriter CreateSinkWriter (string)</td>
+              <td>void MediaFoundationInterop.MFCreateSinkWriterFromURL (string, IMFByteStream, IMFAttributes, IMFSinkWriter&)</td>
+              <td>mfreadwrite.dll</td>
+              </tr>
+              <tr>
+              <td>DirectSoundDeviceInfo> get_Devices ()</td>
+              <td>void DirectSoundOut.DirectSoundEnumerate (DirectSoundOut/DSEnumCallback, IntPtr)</td>
+              <td>dsound.dll</td>
+              </tr>
+              <tr>
+              <td>void InitializeDirectSound ()</td>
+              <td>void DirectSoundOut.DirectSoundCreate (Guid&, DirectSoundOut/IDirectSound&, IntPtr)</td>
+              <td>dsound.dll</td>
+              </tr>
+              <tr>
+              <td>void InitializeDirectSound ()</td>
+              <td>IntPtr DirectSoundOut.GetDesktopWindow ()</td>
+              <td>user32.dll</td>
+              </tr>
+              <tr>
+              <td>MmResult WaveOutOpen (IntPtr&, int, WaveFormat, WaveInterop/WaveCallback)</td>
+              <td>MmResult WaveInterop.waveOutOpen (IntPtr&, IntPtr, WaveFormat, WaveInterop/WaveCallback, IntPtr, WaveInterop/WaveInOutOpenFlags)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>MmResult WaveOutOpen (IntPtr&, int, WaveFormat, WaveInterop/WaveCallback)</td>
+              <td>MmResult WaveInterop.waveOutOpenWindow (IntPtr&, IntPtr, WaveFormat, IntPtr, IntPtr, WaveInterop/WaveInOutOpenFlags)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>MmResult WaveInOpen (IntPtr&, int, WaveFormat, WaveInterop/WaveCallback)</td>
+              <td>MmResult WaveInterop.waveInOpen (IntPtr&, IntPtr, WaveFormat, WaveInterop/WaveCallback, IntPtr, WaveInterop/WaveInOutOpenFlags)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>MmResult WaveInOpen (IntPtr&, int, WaveFormat, WaveInterop/WaveCallback)</td>
+              <td>MmResult WaveInterop.waveInOpenWindow (IntPtr&, IntPtr, WaveFormat, IntPtr, IntPtr, WaveInterop/WaveInOutOpenFlags)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>WaveOutCapabilities GetCapabilities (int)</td>
+              <td>MmResult WaveInterop.waveOutGetDevCaps (IntPtr, WaveOutCapabilities&, int)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>int get_DeviceCount ()</td>
+              <td>int WaveInterop.waveOutGetNumDevs ()</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void Pause ()</td>
+              <td>MmResult WaveInterop.waveOutPause (IntPtr)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void Resume ()</td>
+              <td>MmResult WaveInterop.waveOutRestart (IntPtr)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void Stop ()</td>
+              <td>MmResult WaveInterop.waveOutReset (IntPtr)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>Int64 GetPosition ()</td>
+              <td>MmResult WaveInterop.waveOutGetPosition (IntPtr, MmTime&, int)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void set_Volume (Single)</td>
+              <td>MmResult WaveInterop.waveOutSetVolume (IntPtr, int)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void Dispose (bool)</td>
+              <td>MmResult WaveInterop.waveOutClose (IntPtr)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void Init (IWaveProvider)</td>
+              <td>MmResult WaveInterop.waveOutOpenWindow (IntPtr&, IntPtr, WaveFormat, IntPtr, IntPtr, WaveInterop/WaveInOutOpenFlags)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void Pause ()</td>
+              <td>MmResult WaveInterop.waveOutPause (IntPtr)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void Resume ()</td>
+              <td>MmResult WaveInterop.waveOutRestart (IntPtr)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void Stop ()</td>
+              <td>MmResult WaveInterop.waveOutReset (IntPtr)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>Int64 GetPosition ()</td>
+              <td>MmResult WaveInterop.waveOutGetPosition (IntPtr, MmTime&, int)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void CloseWaveOut ()</td>
+              <td>MmResult WaveInterop.waveOutClose (IntPtr)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>IMFSourceReader CreateReader (MediaFoundationReader/MediaFoundationReaderSettings)</td>
+              <td>void MediaFoundationInterop.MFCreateSourceReaderFromURL (string, IMFAttributes, IMFSourceReader&)</td>
+              <td>mfreadwrite.dll</td>
+              </tr>
+              <tr>
+              <td>void Reuse ()</td>
+              <td>MmResult WaveInterop.waveInUnprepareHeader (IntPtr, WaveHeader, int)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void Reuse ()</td>
+              <td>MmResult WaveInterop.waveInPrepareHeader (IntPtr, WaveHeader, int)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void Reuse ()</td>
+              <td>MmResult WaveInterop.waveInAddBuffer (IntPtr, WaveHeader, int)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void Dispose (bool)</td>
+              <td>MmResult WaveInterop.waveInUnprepareHeader (IntPtr, WaveHeader, int)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void .ctor (IntPtr, int)</td>
+              <td>MmResult WaveInterop.waveInPrepareHeader (IntPtr, WaveHeader, int)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void Dispose (bool)</td>
+              <td>MmResult WaveInterop.waveOutUnprepareHeader (IntPtr, WaveHeader, int)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void WriteToWaveOut ()</td>
+              <td>MmResult WaveInterop.waveOutWrite (IntPtr, WaveHeader, int)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>void .ctor (IntPtr, int, IWaveProvider, Object)</td>
+              <td>MmResult WaveInterop.waveOutPrepareHeader (IntPtr, WaveHeader, int)</td>
+              <td>winmm.dll</td>
+              </tr>
+              <tr>
+              <td>bool MoveNext ()</td>
+              <td>void MediaFoundationInterop.MFTEnumEx (Guid, _MFT_ENUM_FLAG, MFT_REGISTER_TYPE_INFO, MFT_REGISTER_TYPE_INFO, IntPtr&, Int32&)</td>
+              <td>mfplat.dll</td>
+              </tr>
+              <tr>
+              <td>bool MoveNext ()</td>
+              <td>int DmoInterop.DMOEnum (Guid&, DmoEnumFlags, int, DmoPartialMediaType[], int, DmoPartialMediaType[], IEnumDmo&)</td>
+              <td>msdmo.dll</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr class='errorrow' onclick='toggle("el3", "img3")'>
+          <td style='width: 10px'><img id='img3' src='Media/plus.png' /></td>
+          <td style='width: 16px'><img src='Media/fail.png' /></td>
+          <td>NAudio.WindowsMediaFormat.dll</td>
+          <td>1.0.1.0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>15</td>
+        </tr>
+        <tr id='el3' class='errorlist' style='display: none'>
+          <td></td>
+          <td colspan='7'>
+            <table cellpadding='2' cellspacing='0' width='100%' class='inner-results'>
+              <tr class='inner-header'>
+              <td>Calling Method</td>
+              <td>P/Invoke Method</td>
+              <td>P/Invoke Library</td>
+              </tr>
+              <tr>
+              <td>IWMReader CreateReader (WMT_RIGHTS)</td>
+              <td>int WM.WMCreateReader (IntPtr, WMT_RIGHTS, IWMReader&)</td>
+              <td>WMVCore.dll</td>
+              </tr>
+              <tr>
+              <td>IWMSyncReader CreateSyncReader (WMT_RIGHTS)</td>
+              <td>int WM.WMCreateSyncReader (IntPtr, WMT_RIGHTS, IWMSyncReader&)</td>
+              <td>WMVCore.dll</td>
+              </tr>
+              <tr>
+              <td>IWMProfileManager CreateProfileManager ()</td>
+              <td>int WM.WMCreateProfileManager (IWMProfileManager&)</td>
+              <td>WMVCore.dll</td>
+              </tr>
+              <tr>
+              <td>IWMMetadataEditor CreateEditor ()</td>
+              <td>int WM.WMCreateEditor (IWMMetadataEditor&)</td>
+              <td>WMVCore.dll</td>
+              </tr>
+              <tr>
+              <td>IWMIndexer CreateIndexer ()</td>
+              <td>int WM.WMCreateIndexer (IWMIndexer&)</td>
+              <td>WMVCore.dll</td>
+              </tr>
+              <tr>
+              <td>IWMWriter CreateWriter ()</td>
+              <td>int WM.WMCreateWriter (IntPtr, IWMWriter&)</td>
+              <td>WMVCore.dll</td>
+              </tr>
+              <tr>
+              <td>IWMWriterFileSink CreateWriterFileSink ()</td>
+              <td>int WM.WMCreateWriterFileSink (IWMWriterFileSink&)</td>
+              <td>WMVCore.dll</td>
+              </tr>
+              <tr>
+              <td>IWMWriterNetworkSink CreateWriterNetworkSink ()</td>
+              <td>int WM.WMCreateWriterNetworkSink (IWMWriterNetworkSink&)</td>
+              <td>WMVCore.dll</td>
+              </tr>
+              <tr>
+              <td>IWMWriterPushSink CreateWriterPushSink ()</td>
+              <td>int WM.WMCreateWriterPushSink (IWMWriterPushSink&)</td>
+              <td>WMVCore.dll</td>
+              </tr>
+              <tr>
+              <td>bool IsAvailableOffline (string, string)</td>
+              <td>int WM.WMIsAvailableOffline (string, string, Boolean&)</td>
+              <td>WMVCore.dll</td>
+              </tr>
+              <tr>
+              <td>bool IsContentProtected (string)</td>
+              <td>int WM.WMIsContentProtected (string, Boolean&)</td>
+              <td>WMVCore.dll</td>
+              </tr>
+              <tr>
+              <td>void ValidateData (Byte[])</td>
+              <td>int WM.WMValidateData (Byte[], UInt32&)</td>
+              <td>WMVCore.dll</td>
+              </tr>
+              <tr>
+              <td>uint get_ValidateDataMinBuffSize ()</td>
+              <td>int WM.WMValidateData (Byte[], UInt32&)</td>
+              <td>WMVCore.dll</td>
+              </tr>
+              <tr>
+              <td>bool CheckURLExtension (string)</td>
+              <td>int WM.WMCheckURLExtension (string)</td>
+              <td>WMVCore.dll</td>
+              </tr>
+              <tr>
+              <td>bool CheckURLScheme (string)</td>
+              <td>int WM.WMCheckURLScheme (string)</td>
+              <td>WMVCore.dll</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr class='tabletotal'>
+          <td></td>
+          <td></td>
+          <td>Totals</td>
+          <td></td>
+          <td>5</td>
+          <td>0</td>
+          <td>0</td>
+          <td>137</td>
+        </tr>
+      </tfoot>
+    </table>
+</div>
+</body>
+</html>

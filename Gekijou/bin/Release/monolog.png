@@ -1,0 +1,22 @@
+
+Unhandled Exception:
+System.TypeInitializationException: An exception was thrown by the type initializer for PictureFunctions.Globals ---> System.TypeInitializationException: An exception was thrown by the type initializer for System.Drawing.GDIPlus ---> System.DllNotFoundException: /tmp/install/lib/libgdiplus.so
+  at (wrapper managed-to-native) System.Drawing.GDIPlus:GdiplusStartup (ulong&,System.Drawing.GdiplusStartupInput&,System.Drawing.GdiplusStartupOutput&)
+  at System.Drawing.GDIPlus..cctor () [0x00000] in <filename unknown>:0 
+  --- End of inner exception stack trace ---
+  at System.Drawing.Bitmap..ctor (Int32 width, Int32 height, PixelFormat format) [0x00000] in <filename unknown>:0 
+  at (wrapper remoting-invoke-with-check) System.Drawing.Bitmap:.ctor (int,int,System.Drawing.Imaging.PixelFormat)
+  at PictureFunctions.Globals..cctor () [0x00000] in <filename unknown>:0 
+  --- End of inner exception stack trace ---
+  at (wrapper remoting-invoke-with-check) WindowsFormsApplication1.frmMain:.ctor ()
+  at WindowsFormsApplication1.Program.Main () [0x00000] in <filename unknown>:0 
+[ERROR] FATAL UNHANDLED EXCEPTION: System.TypeInitializationException: An exception was thrown by the type initializer for PictureFunctions.Globals ---> System.TypeInitializationException: An exception was thrown by the type initializer for System.Drawing.GDIPlus ---> System.DllNotFoundException: /tmp/install/lib/libgdiplus.so
+  at (wrapper managed-to-native) System.Drawing.GDIPlus:GdiplusStartup (ulong&,System.Drawing.GdiplusStartupInput&,System.Drawing.GdiplusStartupOutput&)
+  at System.Drawing.GDIPlus..cctor () [0x00000] in <filename unknown>:0 
+  --- End of inner exception stack trace ---
+  at System.Drawing.Bitmap..ctor (Int32 width, Int32 height, PixelFormat format) [0x00000] in <filename unknown>:0 
+  at (wrapper remoting-invoke-with-check) System.Drawing.Bitmap:.ctor (int,int,System.Drawing.Imaging.PixelFormat)
+  at PictureFunctions.Globals..cctor () [0x00000] in <filename unknown>:0 
+  --- End of inner exception stack trace ---
+  at (wrapper remoting-invoke-with-check) WindowsFormsApplication1.frmMain:.ctor ()
+  at WindowsFormsApplication1.Program.Main () [0x00000] in <filename unknown>:0 

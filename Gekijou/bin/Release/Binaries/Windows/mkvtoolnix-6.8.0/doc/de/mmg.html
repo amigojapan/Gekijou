@@ -1,0 +1,94 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>mmg -- eine grafische Benutzeroberfläche für mkvmerge1 einschließlich eines
+         Editors für Kapitel und Kopfdaten
+      </title>
+      <link rel="stylesheet" type="text/css" href="mkvtoolnix-doc.css">
+   </head>
+   <body>
+      <div class="heading">mmg -- eine grafische Benutzeroberfläche für <a href="mkvmerge.html"><span class="productname">mkvmerge</span>(1)</a> einschließlich eines
+         Editors für Kapitel und Kopfdaten
+      </div>
+      <hr>
+      <div id="toc" class="toc">
+         <h1>Table of contents</h1>
+         <ul>
+            <li><a href="#mmg.synopsis">1. Übersicht</a></li>
+            <li><a href="#mmg.description">2. Beschreibung</a></li>
+            <li><a href="#mmg.seealso">3. Siehe auch</a></li>
+            <li><a href="#mmg.www">4. WWW</a></li>
+         </ul>
+      </div>
+      <div class="content">
+         <h1><a name="mmg.synopsis">1. Übersicht</a></h1>
+         
+         
+         <div class="cmdsynopsis"><span class="commandname">mmg</span> [[--edit-headers {Dateiname.mkv}] | [Voreinstellungsdatei.mmg] | [Quelldatei.ext]]
+         </div>
+         
+         <h1><a name="mmg.description">2. Beschreibung</a></h1>
+         
+         
+         <p>
+            <span class="productname">mmg</span>(1) ist eine auf <span class="productname">wxWindows</span><sup>(tm)</sup> basierende
+            <span class="abbrev">GUI</span> für <a href="mkvmerge.html"><span class="productname">mkvmerge</span>(1)</a>. Es bietet einfachen Zugriff auf alle
+            Optionen von <a href="mkvmerge.html"><span class="productname">mkvmerge</span>(1)</a>. Alle Einstellungen (z.B. Quelldateien, Spuroptionen
+            etc.) können gespeichert und wiederhergestellt werden. Enthalten ist ein
+            Kapiteleditor, der Dateien im <span class="abbrev">OGM</span>- und <span class="abbrev">XML</span>-Stil lesen,
+            Kapitel im <span class="abbrev">XML</span>-Stil schreiben und sogar Kapitel aus <span class="productname">Matroska</span><sup>(tm)</sup>-Dateien
+            lesen und direkt in <span class="productname">Matroska</span><sup>(tm)</sup>-Dateien schreiben kann. Ebenfalls enthalten
+            ist ein Kopfdateneditor, der zum schnellen Ändern von Eigenschaften
+            existierender <span class="productname">Matroska</span><sup>(tm)</sup>-Dateien benutzt werden kann, ohne dass ein komplett
+            neues Muxing erforderlich ist.
+            
+         </p>
+         
+         
+         <p>
+            <span class="productname">mmg</span>(1) kennt wenige Optionen. Die erste Möglichkeit besteht darin, mit einem
+            einzelnen Dateinamen zu starten. Falls die Dateinamenserweiterung
+            »<span class="literal">.mmg</span>« ist, wird sie als eine Voreinstellungsdatei
+            behandelt und <span class="productname">mmg</span>(1) wird ihre Einstellungen beim Start laden. Andernfalls
+            wird der Name als Name einer Eingabedatei interpretiert, die hinzugefügt
+            wird.
+            
+         </p>
+         
+         
+         <p>
+            Der zweite Betriebsmodus wird mit der Option <span class="option">--edit-headers</span>
+            und einem Dateinamen aufgerufen. Dies lässt <span class="productname">mmg</span>(1) seinen Kopfdateneditor
+            starten und die Datei laden.
+            
+         </p>
+         
+         
+         <p>
+            Die vollständige Dokumentation ist in HTML-Form verfügbar
+            (<span class="filename">doc/mkvmerge-gui.html</span>).
+            
+         </p>
+         
+         <h1><a name="mmg.seealso">3. Siehe auch</a></h1>
+         
+         
+         <p>
+            <a href="mkvmerge.html"><span class="productname">mkvmerge</span>(1)</a>, <a href="mkvextract.html"><span class="productname">mkvextract</span>(1)</a>, <a href="mkvinfo.html"><span class="productname">mkvinfo</span>(1)</a>, <a href="mkvpropedit.html"><span class="productname">mkvpropedit</span>(1)</a>
+            
+         </p>
+         
+         <h1><a name="mmg.www">4. WWW</a></h1>
+         
+         
+         <p>
+            Die neuste Version kann immer auf <a href="http://www.bunkus.org/videotools/mkvtoolnix/">der
+               MKVToolNix-Homepage</a> gefunden werden.
+            
+         </p>
+         
+      </div>
+   </body>
+</html>

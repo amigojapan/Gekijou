@@ -1,0 +1,65 @@
+generate  a wav file
+D:\\eSpeak\\command_line\\espeak.exe -v female3 -w Speach.wav  "this is a test for line 1"
+
+create video  I guess first -r 3 is for the frames per second of input and the second 24 is to make hte video of real -r 24 FPS (which I think is required by youtube)
+d:\ffmpeg\bin\ffmpeg.exe -r 3 -i img%d.png -r 24 video_only.avi
+
+why is my resulting video distorted like this? do you notice how the background gets distorted in the middle of the video? http://www.youtube.com/watch?v=RP3SF_Fi1gA&feature=youtu.be
+The original images don't seem to be distorted.
+comman d line:d:\ffmpeg\bin\ffmpeg.exe -r 7 -i img%d.png -r 24 o.avi
+pastebin of ffmpeg output http://pastebin.com/McL2E4Kd
+
+fixed:
+relaxed	amigojapan: see if it happens with o.mkv
+	amigojapan	ok relaxed , thanks
+	relaxed	unnless there's some reason you need mpeg4 + avi
+	amigojapan	relaxed: hmm, I dont really have a good reason.. I dont think, let me try it
+	amigojapan	relaxed: thanks, that seems to have gotten rid of the distortions.... I will now go to modify my program, thanks again for each time you have helped me
+
+add soundtrack (some warning about needing to guess that the audio track is mono)
+d:\ffmpeg\bin\ffmpeg.exe -i video_only.avi -i Speach.wav output_video.avi
+
+concatenating many videos
+this does not work
+d:\ffmpeg\bin\ffmpeg.exe -i i1.avi -i output.avi -i o2.avi -i 03.avi output_video.avi
+
+This works!
+d:\ffmpeg\bin\ffmpeg.exe -i "concat:i1.avi|i2.avi" -c copy final_video.avi
+
+this too:
+# file for the concat demuxer of ffmpeg
+file 'C:\Users\anonymous\Documents\Visual Studio 2010\Projects\Gekijou\Gekijou\bin\Debug\tmp\Line3\i1.avi'
+file 'C:\Users\anonymous\Documents\Visual Studio 2010\Projects\Gekijou\Gekijou\bin\Debug\tmp\Line3\i2.avi'
+d:\ffmpeg\bin\ffmpeg.exe -f concat -i mylist.txt -c copy o5.avi
+
+OK, both ways of concatenating videos worked now, the problem was that one of the input videos had not audio track it seems.
+
+d:\ffmpeg\bin\ffmpeg.exe -r 3 -i "C:\Users\anonymous\Documents\Visual Studio 2010\Projects\Gekijou\Gekijou\bin\Debug\tmp\img%d.png" -r 24 "C:\Users\anonymous\Documents\Visual Studio 2010\Projects\Gekijou\Gekijou\bin\Debug\tmp\Line1\ThisLine_VideoOnly.avi"
+
+d:\ffmpeg\bin\ffmpeg.exe -r 3 -i "C:\Users\anonymous\Documents\Visual Studio 2010\Projects\Gekijou\Gekijou\bin\Debug\tmp\Line1\img%d.png" -r 24 "C:\Users\anonymous\Documents\Visual Studio 2010\Projects\Gekijou\Gekijou\bin\Debug\tmp\Line1\ThisLine_VideoOnly.avi"
+
+Some strings I need:
+Hi, this is a small demonstration of the current capabilities of Gekujou!
+I am impressed!
+Notice the 3d monster is still rendered in 3d, and the animation continues while the other characters speak.
+Great,  I guess the presentation is done now right?
+Yes, Goodbye!
+
+Hi, I concatenated this video http://www.youtube.com/watch?v=xln-sGv5W1Q using this command d:\ffmpeg\bin\ffmpeg.exe -f concat -i mylist.txt -c copy o5.avi as you can see the mouths are out of sync with the soud, eventhought the original videos have the mouth synced... I can tell you that the sound files that where originally mixed into the videos has slightly shorter sound files than the video.... it seems like these sound files were stuck together ignoring the timming of the videos...  in the original videos, this is most noticible in the last video, where the whisper voice mouth is totally out of sync in the concatenated video, but it is in sync in the original,here are links to the original videos http://pastebin.com/4tAvMRqQ
+
+http://www.youtube.com/watch?v=S2MiHd-TgSw
+http://www.youtube.com/watch?v=7fiHf9YODUE
+http://www.youtube.com/watch?v=pX1uavswCvU
+http://www.youtube.com/watch?v=55-E4P_aQZU
+http://www.youtube.com/watch?v=aYgVAcuAnuM
+http://www.youtube.com/watch?v=x3Bhxz92sAI
+
+relaxed	add -async 1 and see if that fixes it
+[concat @ 026a3f00] Estimating duration from bitrate, this may be inaccurate
+
+added duration to concat file
+got error in C#
+ContextSwitchDeadlock was detected
+Message: CLR は、COM コンテキスト 0x4a819f0 から COM コンテキスト 0x4a81c18 へ 60 秒で移行できませんでした。ターゲット コンテキストおよびアパートメントを所有するスレッドが、ポンプしない待機を行っているか、Windows のメッセージを表示しないで非常に長い実行操作を処理しているかのどちらかです。この状態は通常、パフォーマンスを低下させたり、アプリケーションが応答していない状態および増え続けるメモリ使用を導く可能性があります。この問題を回避するには、すべての Single Thread Apartment (STA) のスレッドが、CoWaitForMultipleHandles のようなポンプする待機プリミティブを使用するか、長い実行操作中に定期的にメッセージをポンプしなければなりません。
+see http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(EHMDA);k(TargetFrameworkMoniker-%22.NETFRAMEWORK%2cVERSION%3dV2.0%22)&rd=true
+
